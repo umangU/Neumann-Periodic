@@ -1,5 +1,7 @@
-% M = neumann(10,1,6,4); 
-% N = neumann_periodic(10,2,4,10); 
+% Test Inputs
+M = neumann(10,1,6,4);  
+N = neumann_periodic(10,2,4,10);
+
 function result = neumann(n, k, init, last) 
     m=1; result = zeros(2,2*k*(k+1));  
         for i = 1:n 
